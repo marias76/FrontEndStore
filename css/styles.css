@@ -103,9 +103,21 @@ h3{
     line-height: 1.5;
 }
 
+/*grid*/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 768px) {
+    .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 /*producto*/
 .producto{
-
+    background-color: var(--primarioOscuro);
+    
 }
 
 .producto__imagen{
